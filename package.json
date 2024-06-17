@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/DispenserBro/vue-project/issues"
   },
-  "homepage": "https://github.com/DispenserBro/vue-project#readme"
+  "homepage": "https://github.com/DispenserBro/vue-project#readme",
+  "dependencies": {
+    "node": "^22.3.0",
+    "vue": "^3.4.29"
+  }
 }
