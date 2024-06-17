@@ -2,7 +2,7 @@
   "name": "vue-project",
   "version": "0.0.1-a",
   "description": "Проект на Vue.js для практической части курсовой по ИТ",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
