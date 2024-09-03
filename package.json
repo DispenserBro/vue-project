@@ -1,23 +1,26 @@
 {
   "name": "vue-project",
-  "version": "0.0.1-a",
-  "description": "Проект на Vue.js для практической части курсовой по ИТ",
-  "main": "src/main.js",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DispenserBro/vue-project.git"
-  },
-  "author": "Danil Iarosh",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DispenserBro/vue-project/issues"
-  },
-  "homepage": "https://github.com/DispenserBro/vue-project#readme",
   "dependencies": {
-    "node": "^22.3.0",
     "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.3.1"
   }
 }
