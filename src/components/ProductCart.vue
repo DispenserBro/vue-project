@@ -21,13 +21,13 @@
       <div class="cart-footer">
         <p><strong>Total: {{ total }} ₽</strong></p>
         <div class="d-flex justify-content-between">
-          <button class="btn btn-success mb-2" @click="placeOrder">Place Order</button>
-          <button class="btn btn-danger mb-2" @click="clearCart">Clear Cart</button>
+          <button class="btn btn-success mb-2" @click="placeOrder">Оформить заказ</button>
+          <button class="btn btn-danger mb-2" @click="clearCart">Очистить корзину</button>
         </div>
       </div>
     </div>
     <div v-else>
-      <p>Your cart is empty</p>
+      <p>Корзина пуста</p>
     </div>
   </div>
 </template>

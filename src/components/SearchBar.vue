@@ -3,11 +3,11 @@
     <input 
       type="text" 
       class="form-control" 
-      placeholder="Search for products..." 
+      placeholder="Введите название..." 
       v-model="searchQuery"
     />
     <div class="input-group-append">
-      <button class="btn btn-outline-secondary" @click="search">Search</button>
+      <button class="btn btn-outline-secondary" @click="search">Поиск</button>
     </div>
   </div>
 </template>

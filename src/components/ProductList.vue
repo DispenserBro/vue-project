@@ -9,7 +9,9 @@
           <p class="card-text mt-auto">
             <strong>{{ product.price }} ₽</strong>
           </p>
-          <button class="btn btn-success mt-2" @click="addToCart(product)">Add to Cart</button>
+          <button class="btn btn-success mt-2" @click="addToCart(product)">
+            Добавить в корзину
+          </button>
         </div>
       </div>
     </div>
@@ -35,9 +37,9 @@ export default {
 }
 
 .card-img-top {
-  width: 100%; /* Занимает всю ширину контейнера */
-  height: auto; /* Автоматически сохраняет соотношение сторон */
-  max-height: 200px; /* Установите максимальную высоту для всех изображений */
-  object-fit: cover; /* Обрезает изображение по центру, чтобы соответствовать контейнеру */
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
 }
 </style>
