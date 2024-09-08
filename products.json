@@ -1,72 +1,72 @@
 [
   {
     "id": 1,
-    "name": "Ammonite Fossil",
+    "name": "Окаменелость аммонита",
     "price": 1500,
-    "description": "A beautiful ammonite fossil with intricate patterns.",
+    "description": "Красивая окаменелость аммонита с замысловатыми узорами.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ammonite_section.JPG/640px-Ammonite_section.JPG"
   },
   {
     "id": 2,
-    "name": "Trilobite Fossil",
+    "name": "Окаменелость трилобита",
     "price": 2000,
-    "description": "An ancient trilobite fossil, well preserved.",
+    "description": "Древняя окаменелость трилобита, хорошо сохранившаяся.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Trilobite_fossil%2C_Desert_Museum.jpg/640px-Trilobite_fossil%2C_Desert_Museum.jpg"
   },
   {
     "id": 3,
-    "name": "Dinosaur Tooth",
+    "name": "Зуб динозавра",
     "price": 3500,
-    "description": "A large dinosaur tooth fossil.",
+    "description": "Большая окаменелость зуба динозавра.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Fossil_dinosaur_tooth_%28possibly_from_Abelisaurus%29.jpg/640px-Fossil_dinosaur_tooth_%28possibly_from_Abelisaurus%29.jpg"
   },
   {
     "id": 4,
-    "name": "Fossilized Fern Leaf",
+    "name": "Окаменелый лист папоротника",
     "price": 1000,
-    "description": "A delicate fossilized fern leaf.",
+    "description": "Окаменелый лист папоротника.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/%D0%9E%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%D0%B2%D1%88%D0%B8%D0%B5_%D0%BE%D1%82%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BA%D0%B8_%D0%BB%D0%B8%D1%81%D1%82%D1%8C%D0%B5%D0%B2_%D0%BF%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0.jpg/640px-%D0%9E%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%D0%B2%D1%88%D0%B8%D0%B5_%D0%BE%D1%82%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BA%D0%B8_%D0%BB%D0%B8%D1%81%D1%82%D1%8C%D0%B5%D0%B2_%D0%BF%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0.jpg"
   },
   {
     "id": 5,
-    "name": "Meteorite Fragment",
+    "name": "Фрагмент метеорита",
     "price": 5000,
-    "description": "A rare fragment of a meteorite, rich in iron.",
+    "description": "Редкий фрагмент метеорита, богатый железом.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Cheljabinsk_meteorite_fragment.jpg/640px-Cheljabinsk_meteorite_fragment.jpg"
   },
   {
     "id": 6,
-    "name": "Petrified Wood",
+    "name": "Окаменелое дерево",
     "price": 1800,
-    "description": "A stunning piece of petrified wood with vibrant colors.",
+    "description": "Потрясающий кусок окаменелого дерева с яркими цветами.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Petrified_wood_from_Cherokee_Ranch_forest.jpg/640px-Petrified_wood_from_Cherokee_Ranch_forest.jpg"
   },
   {
     "id": 7,
-    "name": "Shark Tooth Fossil",
+    "name": "Окаменелость зуба акулы",
     "price": 1200,
-    "description": "A well-preserved shark tooth fossil.",
+    "description": "Хорошо сохранившаяся окаменелость зуба акулы.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Lamniform_shark_tooth_2.jpg/640px-Lamniform_shark_tooth_2.jpg"
   },
   {
     "id": 8,
-    "name": "Fish Fossil",
+    "name": "Окаменелость рыбы",
     "price": 2200,
-    "description": "A detailed fish fossil, showcasing its scales and fins.",
+    "description": "Окаменелость рыбы с чешуей и плавниками.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Fossil_Fish_1.jpg/640px-Fossil_Fish_1.jpg"
   },
   {
     "id": 9,
-    "name": "Mammoth Bone Fragment",
+    "name": "Фрагмент кости мамонта",
     "price": 4000,
-    "description": "A fragment of a bone from a prehistoric mammoth.",
+    "description": "Фрагмент кости доисторического мамонта.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/BZSG_-_Knochen_Mammut.jpg/640px-BZSG_-_Knochen_Mammut.jpg"
   },
   {
     "id": 10,
-    "name": "Amber with Insect",
+    "name": "Янтарь с насекомым",
     "price": 6000,
-    "description": "A piece of amber containing a perfectly preserved insect.",
+    "description": "Кусок янтаря, содержащий идеально сохранившееся насекомое.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fossil_insect_%28Diptera%2C_Nematocera_in_Baltic_amber._Age_50_Mill._years_%28the_Lower_Eocene%29.jpg/640px-Fossil_insect_%28Diptera%2C_Nematocera_in_Baltic_amber._Age_50_Mill._years_%28the_Lower_Eocene%29.jpg"
   }
 ]

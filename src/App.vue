@@ -1,22 +1,37 @@
 <template>
   <div id="app" class="container d-flex flex-column align-items-center">
     <div class="d-flex justify-content-between align-items-center my-4 w-100">
-      <h1 class="mb-0">Vue.js Shop</h1>
+      <h1 class="mb-0">Магазин на Vue.js</h1>
       <div class="d-flex align-items-center">
         <button class="btn btn-primary d-flex align-items-center" @click="toggleCartModal">
-          <p class="mb-0 me-2 p-0">Open Cart</p>
+          <p class=" mb-0 me-2 p-0">Открыть корзину</p>
           <span class="badge bg-success p-2 pb-1">{{ cartTotal }} ₽</span>
         </button>
       </div>
     </div>
+    
+    <!-- Toast уведомление -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="orderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
+        <div class="toast-header">
+          <strong class="me-auto">Заказ оформлен</strong>
+          <small>Только что</small>
+          <button type="button" class="btn-close" @click="hideToast"></button>
+        </div>
+        <div class="toast-body">
+          Ваш заказ был успешно оформлен!
+        </div>
+      </div>
+    </div>
+    
     <div class="mb-4 w-100">
       <SearchBar @search="searchProducts" />
     </div>
     <ProductList :products="filteredProducts" @add-to-cart="addToCart" />
     <ModalWindow :visible="isCartVisible" @close="toggleCartModal">
-      <ProductCart
-        :cart="cart"
-        @remove-from-cart="removeFromCart"
+      <ProductCart 
+        :cart="cart" 
+        @remove-from-cart="removeFromCart" 
         @update-quantity="updateQuantity"
         @clear-cart="clearCart"
         @place-order="placeOrder"
@@ -26,6 +41,8 @@
 </template>
 
 <script>
+import { Toast } from 'bootstrap'
+
 import ProductList from './components/ProductList.vue'
 import ProductCart from './components/ProductCart.vue'
 import SearchBar from './components/SearchBar.vue'
@@ -66,7 +83,7 @@ export default {
         const response = await fetch('/products.json')
         this.products = await response.json()
       } catch (error) {
-        console.error('Failed to load products:', error)
+        console.error('Не получилось загрузить список продуктов:', error)
       }
     },
 
@@ -148,7 +165,20 @@ export default {
         total
       }
       this.saveOrderToStorage() // Сохраняем заказ в localStorage
+      this.showToast() // Показать уведомление при оформлении заказа
       console.log(orderData) // Выводим данные заказа в консоль для проверки
+    },
+
+    showToast() {
+      const toastElement = document.getElementById('orderToast');
+      const toast = new Toast(toastElement); // Используем Toast, импортированный из Bootstrap
+      toast.show();
+    },
+
+    hideToast() {
+      const toastElement = document.getElementById('orderToast');
+      const toast = new Toast(toastElement);
+      toast.hide();
     }
   },
   created() {
@@ -176,5 +206,14 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.toast-container {
+  z-index: 1060;
+}
+
+.toast {
+  background-color: #28a745;
+  color: white;
 }
 </style>
