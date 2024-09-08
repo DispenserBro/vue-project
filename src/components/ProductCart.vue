@@ -5,8 +5,7 @@
         <li v-for="item in cart" :key="item.product.id" class="list-group-item">
           <div class="d-flex justify-content-between align-items-center">
             <div>
-              <strong>{{ item.product.name }}</strong> - {{ item.product.price }} ₽ x
-              {{ item.quantity }}
+              <strong>{{ item.product.name }}</strong> - {{ item.product.price }} ₽ x {{ item.quantity }}
             </div>
             <div>
               <button
