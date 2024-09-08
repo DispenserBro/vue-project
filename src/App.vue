@@ -4,34 +4,40 @@
       <h1 class="mb-0">Магазин на Vue.js</h1>
       <div class="d-flex align-items-center">
         <button class="btn btn-primary d-flex align-items-center" @click="toggleCartModal">
-          <p class=" mb-0 me-2 p-0">Открыть корзину</p>
+          <p class="mb-0 me-2 p-0">Открыть корзину</p>
           <span class="badge bg-success p-2 pb-1">{{ cartTotal }} ₽</span>
         </button>
       </div>
     </div>
-    
+
     <!-- Toast уведомление -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="orderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
+      <div
+        id="orderToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-autohide="true"
+        data-bs-delay="5000"
+      >
         <div class="toast-header">
           <strong class="me-auto">Заказ оформлен</strong>
           <small>Только что</small>
           <button type="button" class="btn-close" @click="hideToast"></button>
         </div>
-        <div class="toast-body">
-          Ваш заказ был успешно оформлен!
-        </div>
+        <div class="toast-body">Ваш заказ был успешно оформлен!</div>
       </div>
     </div>
-    
+
     <div class="mb-4 w-100">
       <SearchBar @search="searchProducts" />
     </div>
     <ProductList :products="filteredProducts" @add-to-cart="addToCart" />
     <ModalWindow :visible="isCartVisible" @close="toggleCartModal">
-      <ProductCart 
-        :cart="cart" 
-        @remove-from-cart="removeFromCart" 
+      <ProductCart
+        :cart="cart"
+        @remove-from-cart="removeFromCart"
         @update-quantity="updateQuantity"
         @clear-cart="clearCart"
         @place-order="placeOrder"
@@ -170,15 +176,15 @@ export default {
     },
 
     showToast() {
-      const toastElement = document.getElementById('orderToast');
-      const toast = new Toast(toastElement); // Используем Toast, импортированный из Bootstrap
-      toast.show();
+      const toastElement = document.getElementById('orderToast')
+      const toast = new Toast(toastElement) // Используем Toast, импортированный из Bootstrap
+      toast.show()
     },
 
     hideToast() {
-      const toastElement = document.getElementById('orderToast');
-      const toast = new Toast(toastElement);
-      toast.hide();
+      const toastElement = document.getElementById('orderToast')
+      const toast = new Toast(toastElement)
+      toast.hide()
     }
   },
   created() {

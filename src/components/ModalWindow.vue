@@ -6,7 +6,8 @@
         <button type="button" class="btn-close bg-danger p-2" @click="closeModal"></button>
       </div>
       <div class="modal-body">
-        <slot></slot> <!-- Контент корзины передается через слот -->
+        <slot></slot>
+        <!-- Контент корзины передается через слот -->
       </div>
     </div>
   </div>
@@ -19,7 +20,7 @@ export default {
   },
   methods: {
     closeModal() {
-      this.$emit('close'); // Закрывает модальное окно при клике
+      this.$emit('close') // Закрывает модальное окно при клике
     }
   }
 }

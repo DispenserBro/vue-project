@@ -1,9 +1,9 @@
 <template>
   <div class="input-group mb-3">
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="Введите название..." 
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Введите название..."
       v-model="searchQuery"
     />
     <div class="input-group-append">
@@ -17,12 +17,12 @@ export default {
   data() {
     return {
       searchQuery: ''
-    };
+    }
   },
   methods: {
     search() {
-      this.$emit('search', this.searchQuery);
+      this.$emit('search', this.searchQuery)
     }
   }
-};
+}
 </script>

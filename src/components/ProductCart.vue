@@ -5,21 +5,39 @@
         <li v-for="item in cart" :key="item.product.id" class="list-group-item">
           <div class="d-flex justify-content-between align-items-center">
             <div>
-              <strong>{{ item.product.name }}</strong> - {{ item.product.price }} ₽ x {{ item.quantity }}
+              <strong>{{ item.product.name }}</strong> - {{ item.product.price }} ₽ x
+              {{ item.quantity }}
             </div>
             <div>
-              <button class="btn btn-outline-danger btn-sm" @click="removeFromCart(item.product.id)">Remove</button>
+              <button
+                class="btn btn-outline-danger btn-sm"
+                @click="removeFromCart(item.product.id)"
+              >
+                Remove
+              </button>
             </div>
           </div>
           <div class="mt-2 button-group">
-            <button class="btn btn-outline-primary btn-sm" @click="increaseQuantity(item.product.id)">+</button>
-            <button class="btn btn-outline-primary btn-sm" @click="decreaseQuantity(item.product.id)">-</button>
+            <button
+              class="btn btn-outline-primary btn-sm"
+              @click="increaseQuantity(item.product.id)"
+            >
+              +
+            </button>
+            <button
+              class="btn btn-outline-primary btn-sm"
+              @click="decreaseQuantity(item.product.id)"
+            >
+              -
+            </button>
           </div>
         </li>
       </ul>
       <!-- Блок с итоговой суммой и кнопками -->
       <div class="cart-footer">
-        <p><strong>Total: {{ total }} ₽</strong></p>
+        <p>
+          <strong>Total: {{ total }} ₽</strong>
+        </p>
         <div class="d-flex justify-content-between">
           <button class="btn btn-success mb-2" @click="placeOrder">Оформить заказ</button>
           <button class="btn btn-danger mb-2" @click="clearCart">Очистить корзину</button>
@@ -39,29 +57,29 @@ export default {
   },
   computed: {
     total() {
-      return this.cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
+      return this.cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0)
     }
   },
   methods: {
     increaseQuantity(id) {
-      this.$emit('update-quantity', { id, amount: 1 });
+      this.$emit('update-quantity', { id, amount: 1 })
     },
     decreaseQuantity(id) {
-      this.$emit('update-quantity', { id, amount: -1 });
+      this.$emit('update-quantity', { id, amount: -1 })
     },
     removeFromCart(id) {
-      this.$emit('remove-from-cart', id);
+      this.$emit('remove-from-cart', id)
     },
     clearCart() {
-      this.$emit('clear-cart');
+      this.$emit('clear-cart')
     },
     placeOrder() {
-      this.$emit('place-order'); // Вызов события для оформления заказа
-      alert(`Ваш заказ на сумму ${this.total} ₽ успешно оформлен!`);
-      this.$emit('clear-cart'); // Очистка корзины после оформления заказа
+      this.$emit('place-order') // Вызов события для оформления заказа
+      alert(`Ваш заказ на сумму ${this.total} ₽ успешно оформлен!`)
+      this.$emit('clear-cart') // Очистка корзины после оформления заказа
     }
   }
-};
+}
 </script>
 
 <style scoped>
