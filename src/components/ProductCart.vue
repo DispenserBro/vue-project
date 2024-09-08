@@ -7,16 +7,9 @@
             <div>
               <strong>{{ item.product.name }}</strong> - {{ item.product.price }} ₽ x {{ item.quantity }}
             </div>
-            <div>
-              <button
-                class="btn btn-outline-danger btn-sm"
-                @click="removeFromCart(item.product.id)"
-              >
-                Remove
-              </button>
-            </div>
           </div>
-          <div class="mt-2 button-group">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="mt-2 button-group">
             <button
               class="btn btn-outline-primary btn-sm"
               @click="increaseQuantity(item.product.id)"
@@ -28,6 +21,13 @@
               @click="decreaseQuantity(item.product.id)"
             >
               -
+            </button>
+          </div>
+            <button
+              class="btn btn-outline-danger btn-sm"
+              @click="removeFromCart(item.product.id)"
+            >
+              Удалить
             </button>
           </div>
         </li>
