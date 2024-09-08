@@ -2,7 +2,7 @@
   <div v-if="visible" class="modal-backdrop" @click.self="closeModal">
     <div class="modal-content">
       <div class="modal-header d-flex justify-content-between">
-        <h5 class="modal-title">Shopping Cart</h5>
+        <h5 class="modal-title">Корзина</h5>
         <button type="button" class="btn-close bg-danger p-2" @click="closeModal"></button>
       </div>
       <div class="modal-body">
