@@ -19,7 +19,7 @@
         aria-live="assertive"
         aria-atomic="true"
         data-bs-autohide="true"
-        data-bs-delay="5000"
+        data-bs-delay="3000"
       >
         <div class="toast-header">
           <strong class="me-auto">Заказ оформлен</strong>
