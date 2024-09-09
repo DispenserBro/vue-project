@@ -124,12 +124,12 @@ export default {
       this.saveOrderToStorage() // Сохранение изменений корзины
     },
 
-    searchProducts(query) {
-      this.searchQuery = query
-    },
-
     toggleCartModal() {
       this.isCartVisible = !this.isCartVisible
+    },
+
+    searchProducts(query) {
+      this.searchQuery = query
     },
 
     saveOrderToStorage() {
@@ -202,10 +202,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 .container {

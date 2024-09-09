@@ -1,5 +1,5 @@
 <template>
-  <div v-if="visible" class="modal-backdrop" @click="closeModal">
+  <div v-if="visible" class="modal-backdrop" @click.self="closeModal">
     <div class="modal-content">
       <div class="modal-header d-flex justify-content-between">
         <h5 class="modal-title">Корзина</h5>

@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 .product-cart {
-  padding: 20px;
+  padding: 1rem;
 }
 
 .button-group {
@@ -101,7 +101,7 @@ export default {
 }
 
 .cart-footer .d-flex {
-  gap: 10px; /* Добавляем отступы между кнопками */
+  gap: 10px;    
 }
 
 .list-group {
