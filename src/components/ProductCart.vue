@@ -29,7 +29,7 @@
       <!-- Блок с итоговой суммой и кнопками -->
       <div class="cart-footer">
         <p>
-          <strong>Total: {{ total }} ₽</strong>
+          <strong>Итог: {{ total }} ₽</strong>
         </p>
         <div class="d-flex justify-content-between">
           <button class="btn btn-success mb-2" @click="placeOrder">Оформить заказ</button>
@@ -43,7 +43,6 @@
   </div>
 </template>
 
-<style scoped></style>
 <script>
 export default {
   props: {
