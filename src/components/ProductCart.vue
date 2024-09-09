@@ -43,6 +43,7 @@
   </div>
 </template>
 
+<style scoped></style>
 <script>
 export default {
   props: {
@@ -68,7 +69,6 @@ export default {
     },
     placeOrder() {
       this.$emit('place-order') // Вызов события для оформления заказа
-      alert(`Ваш заказ на сумму ${this.total} ₽ успешно оформлен!`)
       this.$emit('clear-cart') // Очистка корзины после оформления заказа
     }
   }
