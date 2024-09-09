@@ -106,7 +106,7 @@ export default {
 }
 
 .list-group {
-  max-height: 600px;
+  max-height: 50vh;
   overflow-y: auto;
   padding: 1rem;
 }
