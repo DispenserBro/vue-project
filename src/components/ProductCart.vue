@@ -10,16 +10,10 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="mt-2 button-group">
-            <button
-              class="btn btn-outline-primary btn-sm"
-              @click="increaseQuantity(item.product.id)"
-            >
+            <button class="btn btn-outline-primary btn-sm" @click="increaseQuantity(item.product.id)">
               +
             </button>
-            <button
-              class="btn btn-outline-primary btn-sm"
-              @click="decreaseQuantity(item.product.id)"
-            >
+            <button class="btn btn-outline-primary btn-sm" @click="decreaseQuantity(item.product.id)">
               -
             </button>
           </div>
